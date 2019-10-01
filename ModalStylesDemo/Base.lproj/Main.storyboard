@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pha-2h-ITt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,120 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ModalStylesDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOL-Ny-JhA">
+                                <rect key="frame" x="20" y="377" width="374" height="30"/>
+                                <state key="normal" title="Present new ViewController"/>
+                                <connections>
+                                    <action selector="presentViewControllerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M2y-tI-wpL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modal Presentation Style:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9R-U9-XEP">
+                                <rect key="frame" x="20" y="110" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTO-F4-Dhj">
+                                <rect key="frame" x="0.0" y="139" width="414" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyB-Y8-gLX">
+                                <rect key="frame" x="20" y="415" width="374" height="30"/>
+                                <state key="normal" title="Push new View Controller"/>
+                                <connections>
+                                    <action selector="pushViewControllerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l60-cs-GjC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JOL-Ny-JhA" secondAttribute="trailing" constant="20" id="EEe-Jf-dHl"/>
+                            <constraint firstItem="qTO-F4-Dhj" firstAttribute="top" secondItem="C9R-U9-XEP" secondAttribute="bottom" constant="8" id="M5H-wx-YlW"/>
+                            <constraint firstItem="C9R-U9-XEP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MWc-4j-M2D"/>
+                            <constraint firstItem="zyB-Y8-gLX" firstAttribute="top" secondItem="JOL-Ny-JhA" secondAttribute="bottom" constant="8" id="Px7-hR-Sax"/>
+                            <constraint firstItem="JOL-Ny-JhA" firstAttribute="top" secondItem="qTO-F4-Dhj" secondAttribute="bottom" constant="22" id="ThW-NG-FNE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zyB-Y8-gLX" secondAttribute="trailing" constant="20" id="UeK-T6-642"/>
+                            <constraint firstItem="qTO-F4-Dhj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V6s-pN-nrV"/>
+                            <constraint firstItem="JOL-Ny-JhA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VIh-Kb-7WR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C9R-U9-XEP" secondAttribute="trailing" constant="20" id="lVr-X4-Z0a"/>
+                            <constraint firstItem="C9R-U9-XEP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="upp-uG-3Im"/>
+                            <constraint firstItem="zyB-Y8-gLX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wI5-OK-Yng"/>
+                            <constraint firstItem="qTO-F4-Dhj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yv5-op-cMS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="y1l-vn-iXA"/>
+                    <connections>
+                        <outlet property="modalPresentationStylePicker" destination="qTO-F4-Dhj" id="xLJ-Ej-4gA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--New View Controller-->
+        <scene sceneID="HxC-Mh-d3x">
+            <objects>
+                <viewController storyboardIdentifier="NewViewController" title="New View Controller" id="lVe-2m-bEm" customClass="NewViewController" customModule="ModalStylesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Htc-mU-Agj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHv-Mb-IBh">
+                                <rect key="frame" x="20" y="44" width="374" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneTapped:" destination="lVe-2m-bEm" eventType="touchUpInside" id="uC2-XO-zRa"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Zebra" translatesAutoresizingMaskIntoConstraints="NO" id="JFm-jH-ydd">
+                                <rect key="frame" x="0.0" y="82" width="414" height="512"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SHv-Mb-IBh" firstAttribute="top" secondItem="V4s-wL-KGm" secondAttribute="top" id="4Kd-Fh-VDs"/>
+                            <constraint firstItem="JFm-jH-ydd" firstAttribute="leading" secondItem="V4s-wL-KGm" secondAttribute="leading" id="97g-x4-LdT"/>
+                            <constraint firstItem="SHv-Mb-IBh" firstAttribute="leading" secondItem="V4s-wL-KGm" secondAttribute="leading" constant="20" id="RtF-ZR-ldY"/>
+                            <constraint firstItem="JFm-jH-ydd" firstAttribute="top" secondItem="SHv-Mb-IBh" secondAttribute="bottom" constant="8" id="Za9-j1-R6u"/>
+                            <constraint firstItem="V4s-wL-KGm" firstAttribute="trailing" secondItem="SHv-Mb-IBh" secondAttribute="trailing" constant="20" id="uQj-pU-p5v"/>
+                            <constraint firstItem="JFm-jH-ydd" firstAttribute="trailing" secondItem="V4s-wL-KGm" secondAttribute="trailing" id="x5n-m1-UX3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V4s-wL-KGm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New ViewController" id="Pif-Nu-EOI"/>
+                    <connections>
+                        <outlet property="doneButton" destination="SHv-Mb-IBh" id="5Jq-Wm-3yD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fd7-Ie-GfF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1940.5797101449277" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0gT-br-HvC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pha-2h-ITt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Abp-wv-SHW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0Me-o0-gT4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jlM-rg-ipg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Zebra" width="512" height="512"/>
+    </resources>
 </document>

@@ -13,6 +13,8 @@
 		6871499B2342B54B0021C96B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687149992342B54B0021C96B /* Main.storyboard */; };
 		6871499D2342B54C0021C96B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6871499C2342B54C0021C96B /* Assets.xcassets */; };
 		687149A02342B54C0021C96B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6871499E2342B54C0021C96B /* LaunchScreen.storyboard */; };
+		687149AA2342C7660021C96B /* ModalPresentationStyle+CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687149A92342C7660021C96B /* ModalPresentationStyle+CaseIterable.swift */; };
+		687149AC2342CDA10021C96B /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687149AB2342CDA10021C96B /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		6871499C2342B54C0021C96B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6871499F2342B54C0021C96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		687149A12342B54C0021C96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		687149A72342B5590021C96B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		687149A92342C7660021C96B /* ModalPresentationStyle+CaseIterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalPresentationStyle+CaseIterable.swift"; sourceTree = "<group>"; };
+		687149AB2342CDA10021C96B /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,8 @@
 		687149872342B54B0021C96B = {
 			isa = PBXGroup;
 			children = (
+				687149A82342B55F0021C96B /* readme-assets */,
+				687149A72342B5590021C96B /* README.md */,
 				687149922342B54B0021C96B /* ModalStylesDemo */,
 				687149912342B54B0021C96B /* Products */,
 			);
@@ -56,15 +63,24 @@
 		687149922342B54B0021C96B /* ModalStylesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				687149A12342B54C0021C96B /* Info.plist */,
 				687149932342B54B0021C96B /* AppDelegate.swift */,
+				687149A92342C7660021C96B /* ModalPresentationStyle+CaseIterable.swift */,
+				687149AB2342CDA10021C96B /* NewViewController.swift */,
 				687149952342B54B0021C96B /* SceneDelegate.swift */,
 				687149972342B54B0021C96B /* ViewController.swift */,
-				687149992342B54B0021C96B /* Main.storyboard */,
 				6871499C2342B54C0021C96B /* Assets.xcassets */,
 				6871499E2342B54C0021C96B /* LaunchScreen.storyboard */,
-				687149A12342B54C0021C96B /* Info.plist */,
+				687149992342B54B0021C96B /* Main.storyboard */,
 			);
 			path = ModalStylesDemo;
+			sourceTree = "<group>";
+		};
+		687149A82342B55F0021C96B /* readme-assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "readme-assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +155,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				687149982342B54B0021C96B /* ViewController.swift in Sources */,
+				687149AA2342C7660021C96B /* ModalPresentationStyle+CaseIterable.swift in Sources */,
+				687149AC2342CDA10021C96B /* NewViewController.swift in Sources */,
 				687149942342B54B0021C96B /* AppDelegate.swift in Sources */,
 				687149962342B54B0021C96B /* SceneDelegate.swift in Sources */,
 			);
