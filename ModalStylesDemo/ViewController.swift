@@ -63,6 +63,10 @@ class ViewController: UIViewController {
         guard let nvc = storyboard?.instantiateViewController(withIdentifier: "NewViewController") else { return }
         nvc.modalPresentationStyle = selectedPresentationStyle
         navigationController?.present(nvc, animated: true, completion: nil)
+        
+//        let nvc = NewViewController()
+//        nvc.modalPresentationStyle = selectedPresentationStyle
+//        navigationController?.present(nvc, animated: true)
     }
 }
 
